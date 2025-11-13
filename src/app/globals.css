@@ -1,13 +1,6 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #000000;
 }
 
 html,
@@ -17,9 +10,11 @@ body {
 }
 
 body {
+  width: 100%;
+  overflow: hidden;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +30,19 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.eclipse {
+  border-radius: 813.896px;
+  opacity: 0.75;
+  background: linear-gradient(
+    245deg,
+    rgba(51, 118, 115, 0.15) 27.67%,
+    rgba(18, 91, 83, 0.15) 86.62%
+  );
+  filter: blur(100px);
+  position: absolute;
+  width: 813.896px;
+  height: 813.896px;
+  transform: translateX(-100%) translateY(50%);
+  flex-shrink: 0;
+  left: 0;
 }

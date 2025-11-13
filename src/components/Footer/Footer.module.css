@@ -1,0 +1,154 @@
+.footer {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.container > .stroke {
+  display: none;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 127px;
+}
+
+.footerColumn h4 {
+  margin-bottom: 24px;
+
+  color: #b1b5c3;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links a {
+  color: #e6e8ec;
+
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.footerRHS {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stroke {
+  width: 45px;
+  height: 1px;
+  opacity: 0.25;
+  background: #fff;
+  margin-bottom: 8px;
+}
+
+.footerSocial {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fbText {
+  color: #8d9298;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.05px;
+  opacity: 0.6;
+}
+
+.base {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.baseText {
+  opacity: 0.4;
+  /* text */
+  color: #fff;
+  font-family: var(--font-inter);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 14px */
+}
+
+.arrowIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.arrowIcon:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 54px 0;
+  }
+
+  .container > .stroke {
+    width: 100%;
+    margin: 24px 0;
+    display: block;
+  }
+
+  .footerLinks {
+    width: 100%;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .footerRHS {
+    align-items: flex-start;
+  }
+
+  .footerRHS .stroke {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    padding-bottom: 24px;
+  }
+
+  .arrowIcon {
+    width: 40px;
+    height: 40px;
+  }
+}

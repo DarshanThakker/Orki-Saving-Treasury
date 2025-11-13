@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  max-width: 938px;
+  border-radius: 0 0 22px 22px;
+  padding-bottom: 10px;
+  background: #0b2025;
+  margin: 0 auto;
+}
+
+.innerContainer {
+  width: 100%;
+  padding: 64px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 24px 24px;
+  font-family: var(--font-pjs);
+  border: 2px solid rgba(23, 74, 53, 0.6);
+}
+
+.headerTitle {
+  color: #fff;
+  text-align: center;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 30.8px */
+  letter-spacing: -0.28px;
+  margin-bottom: 12px;
+}
+
+.headerSubtitle {
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  margin-bottom: 32px;
+  opacity: 0.8;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 532px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  padding-left: 8px;
+}
+
+.submitBtn {
+  height: 44px !important;
+  padding: 12px 20px;
+  border-radius: 12px !important;
+  background: rgba(14, 211, 93, 0.96) !important;
+  box-shadow: 0 2px 4px 0 rgba(67, 138, 0, 0.32),
+    0 0 0 2px rgba(255, 182, 37, 0.16) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .innerContainer {
+    padding: 48px 24px;
+  }
+
+  .headerTitle {
+    font-size: 24px;
+  }
+
+  .headerSubtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .form {
+    border-radius: 12px;
+  }
+
+  .form input {
+    height: 36px;
+  }
+
+  .submitBtn {
+    height: 36px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .innerContainer {
+    padding: 32px 16px;
+  }
+
+  .headerTitle {
+    font-size: 20px;
+    line-height: 110%;
+    letter-spacing: -0.2px;
+  }
+
+  .headerSubtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form {
+    border-radius: 8px;
+  }
+
+  .form input {
+    height: 28px;
+  }
+
+  .submitBtn {
+    height: 28px;
+    border-radius: 8px !important;
+  }
+}

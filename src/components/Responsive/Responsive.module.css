@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  max-width: calc(1248px + 128px);
+  padding: 0 64px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: calc(1248px + 64px);
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    max-width: calc(1248px + 32px);
+    padding: 0 16px;
+  }
+}
