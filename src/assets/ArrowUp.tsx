@@ -13,9 +13,9 @@ export default function ArrowUp(props: React.SVGProps<SVGSVGElement>) {
       <path
         d="M4.75 15.75L4.75 0.75M4.75 0.75L0.75 4.75M4.75 0.75L8.75 4.75"
         stroke="white"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
